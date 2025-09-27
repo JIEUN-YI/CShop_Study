@@ -1,0 +1,15 @@
+D:\coding\CShop_Study\01_Loop\obj\Debug\net8.0\01_Loop.GeneratedMSBuildEditorConfig.editorconfig
+D:\coding\CShop_Study\01_Loop\obj\Debug\net8.0\01_Loop.AssemblyInfoInputs.cache
+D:\coding\CShop_Study\01_Loop\obj\Debug\net8.0\01_Loop.AssemblyInfo.cs
+D:\coding\CShop_Study\01_Loop\obj\Debug\net8.0\01_Loop.csproj.CoreCompileInputs.cache
+D:\coding\CShop_Study\01_Loop\obj\Debug\net8.0\01_Loop.sourcelink.json
+D:\coding\CShop_Study\01_Loop\bin\Debug\net8.0\01_Loop.exe
+D:\coding\CShop_Study\01_Loop\bin\Debug\net8.0\01_Loop.deps.json
+D:\coding\CShop_Study\01_Loop\bin\Debug\net8.0\01_Loop.runtimeconfig.json
+D:\coding\CShop_Study\01_Loop\bin\Debug\net8.0\01_Loop.dll
+D:\coding\CShop_Study\01_Loop\bin\Debug\net8.0\01_Loop.pdb
+D:\coding\CShop_Study\01_Loop\obj\Debug\net8.0\01_Loop.dll
+D:\coding\CShop_Study\01_Loop\obj\Debug\net8.0\refint\01_Loop.dll
+D:\coding\CShop_Study\01_Loop\obj\Debug\net8.0\01_Loop.pdb
+D:\coding\CShop_Study\01_Loop\obj\Debug\net8.0\01_Loop.genruntimeconfig.cache
+D:\coding\CShop_Study\01_Loop\obj\Debug\net8.0\ref\01_Loop.dll
