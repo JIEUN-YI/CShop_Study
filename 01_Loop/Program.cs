@@ -6,150 +6,29 @@ namespace _01_Loop
     {
         static void Main(string[] args)
         {
-            Loop loop = new Loop();
             StringBuilder sb = new StringBuilder();
+            #region 다양한 삼각형 그리기
+            // TriangleLoop triangleLoop = new TriangleLoop();
+            // Console.WriteLine("Number 1");
+            // sb.Append(triangleLoop.Number1(5));
+            // Console.WriteLine("Number 2");
+            // sb.Append(triangleLoop.Number2(5));
+            // Console.WriteLine("Number 3");
+            // sb.Append(triangleLoop.Number3(5));
+            // Console.WriteLine("Number 4");
+            // sb.Append(triangleLoop.Number4(5));
+            // Console.WriteLine(sb.ToString());
+            #endregion
 
-            Console.WriteLine("Number 1");
-            sb.Append(loop.Number1(5));
-            Console.WriteLine("Number 2");
-            sb.Append(loop.Number2(5));
-            Console.WriteLine("Number 3");
-            sb.Append(loop.Number3(5));
-            Console.WriteLine("Number 4");
-            sb.Append(loop.Number4(5));
-            Console.WriteLine(sb.ToString());
+            #region 다이아몬드 그리기
+            Console.WriteLine("출력할 다이아몬드를 홀수로 입력 : ");
+            int.TryParse(Console.ReadLine(), out int num);
+            Diamond diamond = new Diamond(num);
+            sb = diamond.DiamondLoop();
 
-        }       
-
-    }
-    /// <summary>
-    /// 반복문 클래스 생성
-    /// </summary>
-    public class Loop
-    {
-        /// <summary>
-        /// StringBuilder에 *을 저장
-        /// </summary>
-        /// <returns></returns>
-        public StringBuilder Drow()
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.Append("*");
-            return sb;
+            Console.WriteLine(sb);
+            #endregion
         }
 
-        /// <summary>
-        /// 출력예시
-        /// *
-        /// **
-        /// ***
-        /// ****
-        /// *****
-        /// </summary>
-        /// <param name="line"></param>
-        /// <returns></returns>
-        public string Number1(int line)
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Number1\n====================");
-            for (int count = 0; count < line; count++)
-            {
-                for (int star = 1; star <= count + 1; star++)
-                {
-                    sb.Append(Drow());
-                }
-                sb.Append("\n");
-            }
-            return sb.ToString();
-        }
-
-        /// <summary>
-        /// 출력예시
-        ///      *
-        ///     **
-        ///    ***
-        ///   ****
-        ///  *****
-        /// </summary>
-        /// <param name="line"></param>
-        /// <returns></returns>
-        public string Number2(int line)
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Number2\n====================");
-            for(int y = 0, star = 1; y < line; y++, star++)
-            {
-                for(int x = 0; x < line; x++)
-                {
-                    if (x < line - star)
-                    {
-                        sb.Append(" ");
-                    }
-                    else
-                    {
-                        sb.Append(Drow());
-                    }
-                }
-                sb.Append("\n");
-            }
-            return sb.ToString();
-        }
-
-        /// <summary>
-        /// 출력예시
-        /// *****
-        /// ****
-        /// ***
-        /// **
-        /// *
-        /// </summary>
-        /// <param name="line"></param>
-        /// <returns></returns>
-        public string Number3(int line)
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Number3\n====================");
-            for (int y = 0; y < line; y++)
-            {
-                for(int x = line - y; x > 0; x--)
-                {
-                    sb.Append(Drow());
-                }
-                sb.Append("\n");
-            }
-            return sb.ToString();
-        }
-
-        /// <summary>
-        /// 출력예시
-        /// *****
-        ///  ****
-        ///   ***
-        ///    **
-        ///     *
-        /// </summary>
-        /// <param name="line"></param>
-        /// <returns></returns>
-        public string Number4(int line)
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Number4\n====================");
-            for (int y = 0, star = 5; y < line; y++, star--)
-            {
-                for (int x = 0; x < line; x++)
-                {
-                    if (line - x <= star)
-                    {
-                        sb.Append(Drow());
-                    }
-                    else
-                    {
-                        sb.Append(" ");
-                    }
-                }
-                sb.Append("\n");
-            }
-            return sb.ToString();
-        }
     }
 }
